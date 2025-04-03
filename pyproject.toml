@@ -1,5 +1,5 @@
 [project]
-name = "effective-depth"
+name = "transformer2"
 version = "1.0.0"
 description = "Code for 'Leveraging the true depth of LLMs'"
 readme = "README.md"
