@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description="Set global settings for the applic
 parser.add_argument(
     "--model_key",
     type=str,
-    default="meta-llama/Llama-3.2-3B",
+    default="unsloth/Llama-3.2-3B",
     help="Key for the model to use.",
 )
 # Approximation settings
@@ -30,7 +30,7 @@ parser.add_argument(
 
 
 def get_model(model_key):
-    assert "meta-llama" in model_key
+    assert "unsloth" in model_key
 
     tokenizer = AutoTokenizer.from_pretrained(model_key, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
